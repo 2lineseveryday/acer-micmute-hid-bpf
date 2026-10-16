@@ -1,5 +1,7 @@
 # Acer Laptop Mic-Mute Key Fix (Linux)
 
+[한국어](README.ko.md)
+
 The microphone-mute hotkey on some Acer laptops sends a HID usage its own
 report descriptor declares out of range, so the kernel silently drops it:
 no input event on any `/dev/input/event*` node, while the raw report is
@@ -176,6 +178,11 @@ sudo udevadm trigger --action=add /sys/bus/hid/devices/0018:048D:83DC.0001
 
 - [HID-BPF kernel docs](https://docs.kernel.org/hid/hid-bpf.html)
 - [udev-hid-bpf](https://gitlab.freedesktop.org/libevdev/udev-hid-bpf/)
+
+## AI assistance
+
+Parts of this fix (diagnosis, BPF program, docs) were developed with AI assistance
+and verified on real hardware (`evtest`, hwdb, Hyprland end-to-end).
 
 ## License
 
