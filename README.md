@@ -186,4 +186,6 @@ and verified on real hardware (`evtest`, hwdb, Hyprland end-to-end).
 
 ## License
 
-MIT — see `LICENSE`.
+MIT — see `LICENSE`. Exception: the BPF program
+(`0010-ITE__83DC-MicMute.bpf.c`) is GPL-2.0-only, as the kernel requires
+for HID-BPF programs (see its SPDX header).

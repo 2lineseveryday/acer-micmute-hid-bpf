@@ -174,4 +174,6 @@ sudo udevadm trigger --action=add /sys/bus/hid/devices/0018:048D:83DC.0001
 
 ## License
 
-MIT — `LICENSE` 참조.
+MIT — `LICENSE` 참조. 예외: BPF 프로그램
+(`0010-ITE__83DC-MicMute.bpf.c`)은 커널 요구(HID-BPF)상 GPL-2.0-only
+(SPDX 헤더 참조).
